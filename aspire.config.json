@@ -1,0 +1,5 @@
+{
+  "appHost": {
+    "path": "AgentsHub.AppHost/AgentsHub.AppHost.csproj"
+  }
+}
