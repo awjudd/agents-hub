@@ -1,11 +1,12 @@
-﻿@inherits LayoutComponentBase
-@layout SimpleLayout
+@inherits LayoutComponentBase
 
-<main class="flex-1 overflow-y-auto">
-    <div class="max-w-6xl mx-auto px-8 py-8">
+<div class="flex h-screen">
+    <div class="flex h-full">
+        <NavMenu/>
+
         @Body
     </div>
-</main>
+</div>
 
 <div id="blazor-error-ui" data-nosnippet>
     An unhandled error has occurred.
