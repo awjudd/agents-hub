@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgentsHub.Tests", "AgentsHu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentsHub.Web", "AgentsHub.Web\AgentsHub.Web.csproj", "{3666875C-DF7B-4C5F-B270-C1F2A00FC156}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentsHub.Data", "AgentsHub.Data\AgentsHub.Data.csproj", "{47340B5D-B5D0-4DA4-A5B3-34B090B6AB67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{3666875C-DF7B-4C5F-B270-C1F2A00FC156}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3666875C-DF7B-4C5F-B270-C1F2A00FC156}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3666875C-DF7B-4C5F-B270-C1F2A00FC156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47340B5D-B5D0-4DA4-A5B3-34B090B6AB67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47340B5D-B5D0-4DA4-A5B3-34B090B6AB67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47340B5D-B5D0-4DA4-A5B3-34B090B6AB67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47340B5D-B5D0-4DA4-A5B3-34B090B6AB67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

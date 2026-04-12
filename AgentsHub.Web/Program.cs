@@ -1,10 +1,14 @@
+using AgentsHub.Data;
 using AgentsHub.Web.Components;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.AddNpgsqlDbContext<AgentsHubDbContext>(connectionName: "postgres");
 
 builder.AddDefaultHealthChecks();
 
@@ -28,5 +32,15 @@ app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
 app.MapDefaultEndpoints();
+
+
+if (builder.Environment.IsDevelopment())
+{
+    using var scope = app.Services.CreateScope();
+    var databaseService = scope.ServiceProvider.GetRequiredService<AgentsHubDbContext>();
+    
+    databaseService.Database.EnsureCreated();
+    databaseService.Database.Migrate();
+}
 
 app.Run();
