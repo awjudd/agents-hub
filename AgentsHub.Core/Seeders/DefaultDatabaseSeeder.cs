@@ -25,7 +25,7 @@ public static class DefaultDatabaseSeeder
             Description = "Very simple agent that just thinks for a little bit and then echos back what you provided.",
             SystemPrompt =
                 "You are a very simple agent that thinks for 1-5 seconds and then responds with what the user provided.",
-            ModelName = "foo",
+            ModelName = "qwen3:4b",
             TenantId = tenant.Id,
             Tenant =  tenant,
         });
