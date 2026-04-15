@@ -5,7 +5,8 @@ var apiService = builder.AddProject<Projects.AgentsHub_ApiService>("apiservice")
 
 var postgres = builder.AddPostgres("postgres")
     .WithDataVolume()
-    .WithPgAdmin();
+    .WithPgAdmin()
+    .WithHostPort(51814);
 
 builder.AddProject<Projects.AgentsHub_Web>("webfrontend")
     .WithExternalHttpEndpoints()

@@ -1,4 +1,4 @@
-using AgentsHub.Data;
+using AgentsHub.Core;
 using AgentsHub.Web.Components;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+builder.Services.ConfigureDatabaseService();
 builder.AddNpgsqlDbContext<AgentsHubDbContext>(connectionName: "postgres");
 
 builder.AddDefaultHealthChecks();

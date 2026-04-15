@@ -5,10 +5,11 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AgentsHub.Data\AgentsHub.Data.csproj" />
+      <ProjectReference Include="..\AgentsHub.Core\AgentsHub.Core.csproj" />
       <ProjectReference Include="..\AgentsHub.ServiceDefaults\AgentsHub.ServiceDefaults.csproj" />
     </ItemGroup>
 
