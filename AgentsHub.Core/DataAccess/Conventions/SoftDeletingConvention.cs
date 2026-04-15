@@ -1,9 +1,8 @@
 using System.Linq.Expressions;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
-namespace AgentsHub.Core.Conventions;
+namespace AgentsHub.Core.DataAccess.Conventions;
 
 public class SoftDeletingConvention: IModelFinalizingConvention 
 {

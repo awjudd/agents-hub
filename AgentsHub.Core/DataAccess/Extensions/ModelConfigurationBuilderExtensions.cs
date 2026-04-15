@@ -2,7 +2,7 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
-namespace AgentsHub.Core.Extensions;
+namespace AgentsHub.Core.DataAccess.Extensions;
 
 public static class ModelConfigurationBuilderExtensions
 {

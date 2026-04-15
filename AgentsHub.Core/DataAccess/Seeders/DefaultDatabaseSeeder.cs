@@ -1,7 +1,7 @@
-using AgentsHub.Core.Conversations;
+using AgentsHub.Core.DataAccess.Conversations;
 using Microsoft.EntityFrameworkCore;
 
-namespace AgentsHub.Core.Seeders;
+namespace AgentsHub.Core.DataAccess.Seeders;
 
 public static class DefaultDatabaseSeeder
 {

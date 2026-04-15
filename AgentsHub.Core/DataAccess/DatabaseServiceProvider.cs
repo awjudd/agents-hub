@@ -1,8 +1,7 @@
-using AgentsHub.Core.Interceptors;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AgentsHub.Core;
+namespace AgentsHub.Core.DataAccess;
 
 public static class DatabaseServiceProvider
 {

@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AgentsHub.Core.Conventions;
+namespace AgentsHub.Core.DataAccess.Conventions;
 
 public class TenantConvention: IEntityTypeConfiguration<Tenant>
 {

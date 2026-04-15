@@ -1,8 +1,8 @@
-using AgentsHub.Core.Conversations;
+using AgentsHub.Core.DataAccess.Conversations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AgentsHub.Core.Configurations.Conversations;
+namespace AgentsHub.Core.DataAccess.Configurations.Conversations;
 
 public class AgentsConfiguration: IEntityTypeConfiguration<Agent>
 {

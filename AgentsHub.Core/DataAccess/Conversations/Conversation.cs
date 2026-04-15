@@ -1,4 +1,4 @@
-namespace AgentsHub.Core.Conversations;
+namespace AgentsHub.Core.DataAccess.Conversations;
 
 public class Conversation: BaseEntity, ITenantScoped
 {

@@ -1,4 +1,4 @@
-namespace AgentsHub.Core;
+namespace AgentsHub.Core.DataAccess;
 
 public abstract class BaseEntity
 {

@@ -1,8 +1,8 @@
-using AgentsHub.Core.Conversations;
-using AgentsHub.Core.Extensions;
+using AgentsHub.Core.DataAccess.Conversations;
+using AgentsHub.Core.DataAccess.Extensions;
 using Microsoft.EntityFrameworkCore;
 
-namespace AgentsHub.Core;
+namespace AgentsHub.Core.DataAccess;
 
 public class AgentsHubDbContext: DbContext
 {

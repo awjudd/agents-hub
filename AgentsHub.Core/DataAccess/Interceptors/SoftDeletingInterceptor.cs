@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace AgentsHub.Core.Interceptors;
+namespace AgentsHub.Core.DataAccess.Interceptors;
 
 public class SoftDeletingInterceptor: SaveChangesInterceptor
 {

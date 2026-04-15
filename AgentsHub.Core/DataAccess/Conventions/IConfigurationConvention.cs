@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace AgentsHub.Core.Conventions;
+namespace AgentsHub.Core.DataAccess.Conventions;
 
 public interface IConfigurationConvention
 {

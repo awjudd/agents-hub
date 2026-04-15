@@ -1,5 +1,6 @@
 using AgentsHub.Core;
-using AgentsHub.Core.Seeders;
+using AgentsHub.Core.DataAccess;
+using AgentsHub.Core.DataAccess.Seeders;
 using AgentsHub.Web.Components;
 using Microsoft.EntityFrameworkCore;
 
