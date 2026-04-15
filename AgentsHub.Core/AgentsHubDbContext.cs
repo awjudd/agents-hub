@@ -16,14 +16,15 @@ public class AgentsHubDbContext: DbContext
         base.OnModelCreating(modelBuilder);
         
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AgentsHubDbContext).Assembly);
+        
     }
-    
+
     protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
     {
         base.ConfigureConventions(configurationBuilder);
-        
+
         configurationBuilder.ApplyConventionsFromAssembly(typeof(AgentsHubDbContext).Assembly);
-        
+
         configurationBuilder.Properties<decimal>()
             .HavePrecision(18, 6);
     }

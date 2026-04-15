@@ -1,4 +1,5 @@
 using AgentsHub.Core;
+using AgentsHub.Core.Seeders;
 using AgentsHub.Web.Components;
 using Microsoft.EntityFrameworkCore;
 
@@ -42,6 +43,7 @@ if (builder.Environment.IsDevelopment())
     
     databaseService.Database.EnsureCreated();
     databaseService.Database.Migrate();
+    DefaultDatabaseSeeder.SeedAsync(databaseService).Wait();
 }
 
 app.Run();
